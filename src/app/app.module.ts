@@ -7,6 +7,7 @@ import { SumaComponent } from './suma/suma.component';
 import { BotonesComponent } from './botones/botones.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { BuclesComponent } from './bucles/bucles.component';
+import { SwitchComponent } from './switch/switch.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { BuclesComponent } from './bucles/bucles.component';
     SumaComponent,
     BotonesComponent,
     FormularioComponent,
-    BuclesComponent
+    BuclesComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule
