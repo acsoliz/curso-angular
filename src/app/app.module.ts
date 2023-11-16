@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador/contador.component';
 import { SumaComponent } from './suma/suma.component';
 import { BotonesComponent } from './botones/botones.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { BotonesComponent } from './botones/botones.component';
     AppComponent,
     ContadorComponent,
     SumaComponent,
-    BotonesComponent
+    BotonesComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule
