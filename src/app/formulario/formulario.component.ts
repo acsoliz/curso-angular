@@ -7,8 +7,19 @@ import { Component } from '@angular/core';
 })
 export class FormularioComponent {
 
+  openAlert :boolean = false
+
+
+  cerrarAlert(){
+    this.openAlert = false
+  }
+  // mostrarCerraAlert = false
+
   mostrar_en_consola(name:string){
     console.log('name', name)
+    this.openAlert = true
+    // this.mostrarCerraAlert = true
   }
+
 
 }
