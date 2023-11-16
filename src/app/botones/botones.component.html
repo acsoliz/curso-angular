@@ -1,36 +1,17 @@
 <div>
-  <button
-    [class]="{
-        'disabled': button_disabled
-    }"
-    class="btn btn-danger"
-    (click)="text_color = 'text-danger'"
-  >
-    Color rojo
-  </button>
-  <button
-    [class]="{
-        'disabled': button_disabled
-    }"
-    class="btn btn-success mx-2"
-    (click)="text_color = 'text-succes'"
-  >
-    Color verde
-  </button>
-  <button
-    [class]="{
-        'disabled': button_disabled
-    }"
+
+  <button 
     class="btn btn-primary"
-    (click)="text_color = 'text-primary'"
-  >
-    Color azul
-  </button>
+    (click)="img = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/crescent-moon-digital-carbine.jpg'"
+    >Image1</button>
+    <button 
+    (click)="img = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/moon-hug-digital-carbine.jpg'"
+    class="btn btn-danger"  
+  >Image2</button>
 </div>
 
-<!-- <p class={{text_color}}> -->
-<p [class]="text_color">Texto que cambiara de color</p>
 
-<button class="btn btn-secondary" (click)="button_disabled = !button_disabled">
-  Activar/Desactivar
-</button>
+<img [src]="img" alt="">
+
+
+

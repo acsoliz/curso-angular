@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
 export class BotonesComponent {
 
   constructor(){}
-  // ngOnInit(): void{}
+  ngOnInit(): void{}
 
-  text_color : string = ""
-
-  button_disabled : boolean = false;
+  img : string = "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/space-heartbeat-digital-carbine.jpg"
 }
