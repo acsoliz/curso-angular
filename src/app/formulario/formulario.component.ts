@@ -13,12 +13,10 @@ export class FormularioComponent {
   cerrarAlert(){
     this.openAlert = false
   }
-  // mostrarCerraAlert = false
 
   mostrar_en_consola(name:string){
     console.log('name', name)
     this.openAlert = true
-    // this.mostrarCerraAlert = true
   }
 
 

@@ -2,18 +2,18 @@
 
 <!--  #name => variable de plantilla  -->
 
-<button class="btn btn-primary m-2" (click)="mostrar_en_consola(name.value)">
+<button class="btn btn-primary mt-2" (click)="mostrar_en_consola(name.value)">
   Mostrar en consola
 </button>
 
-<div class="alert alert-primary m-4" *ngIf="openAlert ; else mensaje">
+<div class="alert alert-primary mt-4" *ngIf="openAlert ; else mensaje">
   <p>Se envio el mensaje</p>
 
-  <button class="btn btn-danger m-2" (click)="openAlert = false">
+  <button class="btn btn-danger mt-2" (click)="openAlert = false">
     x
   </button>
 </div>
 
 <ng-template #mensaje>
-    <div class="alert alert-danger m-4">Mensaje de prueba</div>
+    <div class="alert alert-danger mt-4">Mensaje de prueba</div>
 </ng-template>
