@@ -9,7 +9,12 @@
           type="text"
           placeholder="Por favor ingrese un nombre"
           [(ngModel)]="persona.nombre"
+          required
+          #name="ngModel"
         />
+        <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+          El nombre es obligatorio
+        </div>
       </div>
 
       <div>
@@ -20,10 +25,19 @@
           type="number"
           placeholder="Por favor ingrese la edad"
           [(ngModel)]="persona.edad"
+          required
+          #edad="ngModel"
         />
-      </div>
+        <div class="alert alert-danger mt-2" [hidden]="edad.valid || edad.pristine">
+            La edad es obligatorio
+          </div>
+      </div>edad
       <button class="btn btn-primary mt-2">Enviar</button>
     </form>
   </div>
 </div>
-{{ persona | json }}
+
+{{ name.errors | json }}
+<hr />
+
+{{ name.valid }}
