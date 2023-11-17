@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-body">
+    <form (ngSubmit)="procesarFormulario()">
+      <div class="mb-2">
+        <label class="form-label">Nombre</label>
+        <input
+          name="nombre"
+          class="form-control"
+          type="text"
+          placeholder="Por favor ingrese un nombre"
+          [(ngModel)]="persona.nombre"
+        />
+      </div>
+
+      <div>
+        <label class="form-label">Edad</label>
+        <input
+          name="edad"
+          class="form-control"
+          type="number"
+          placeholder="Por favor ingrese la edad"
+          [(ngModel)]="persona.edad"
+        />
+      </div>
+      <button class="btn btn-primary mt-2">Enviar</button>
+    </form>
+  </div>
+</div>
+{{ persona | json }}
