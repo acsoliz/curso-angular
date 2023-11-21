@@ -1,5 +1,4 @@
-<p>children works!</p>
-<p>{{title}} desde children</p>
+<!-- <p>{{title}} desde children</p> -->
+<h2>Componete hijo</h2>
 
-
-<input type="text" class="form-control" [(ngModel)]="title">
+<input type="text" class="form-control" (keyup)="emitTitleChange()" [(ngModel)]="title">
